@@ -17,4 +17,10 @@ public class PruebaColecta {
 		Assert.assertEquals("monto objetivo", 
 							40000.0, colecta.obtenerObjetivo(), 0.01);	
 	}
+	
+	@Test(expected = Error.class)
+	public void crearColectaConUnMontoNegativoGeneraUnError() {
+		
+		new Colecta(-10000.0);
+	}
 }
