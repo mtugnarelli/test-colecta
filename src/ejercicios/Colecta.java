@@ -4,6 +4,7 @@ public class Colecta {
 
 	private double objetivo;
 	private double recaudacion;
+	private int donaciones = 0;
 
 	/**
 	 * pre : 'montoObjetivo' debe ser un valor positivo, en [$].
@@ -48,6 +49,7 @@ public class Colecta {
 		this.validar(donacion);
 		
 		this.recaudacion = this.recaudacion + donacion;
+		this.donaciones = this.donaciones + 1;
 	}
 
 	/**
@@ -58,8 +60,12 @@ public class Colecta {
 		return this.recaudacion;
 	}
 
+	/**
+	 * post: devuelve la cantidad de veces que se hicieron donaciones
+	 * 		 en a la Colecta.
+	 */
 	public int contarDonaciones() {
 
-		return 0;
+		return this.donaciones;
 	}
 }
