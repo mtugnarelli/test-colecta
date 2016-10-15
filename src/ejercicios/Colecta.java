@@ -27,4 +27,13 @@ public class Colecta {
 		
 		return this.objetivo;
 	}
+
+	public void donar(double donacion) {
+		
+	}
+
+	public double calcularRecaudacion() {
+
+		return 0;
+	}
 }
