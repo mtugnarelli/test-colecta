@@ -80,4 +80,17 @@ public class PruebaColecta {
 		/* comprobación */
 		Assert.assertEquals("donaciones", 5, donaciones);
 	}
+	
+	@Test
+	public void contarDonacionesSinDonar() {
+		
+		/* inicialización */
+		Colecta colecta = new Colecta(40000);
+		
+		/* operación */
+		int donaciones = colecta.contarDonaciones();
+		
+		/* comprobación */
+		Assert.assertEquals("donaciones", 0, donaciones);
+	}
 } 
