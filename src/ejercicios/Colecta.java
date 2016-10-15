@@ -57,4 +57,9 @@ public class Colecta {
 
 		return this.recaudacion;
 	}
+
+	public int contarDonaciones() {
+
+		return 0;
+	}
 }

@@ -62,4 +62,22 @@ public class PruebaColecta {
 		/* operación */
 		colecta.donar(-100.0);
 	}
-}
+	
+	@Test
+	public void contarDonacionesLuegoDeDonarCincoVeces() {
+		
+		/* inicialización */
+		Colecta colecta = new Colecta(40000);
+		
+		/* operación */
+		colecta.donar(100);
+		colecta.donar(600);
+		colecta.donar(700);
+		colecta.donar(100);
+		colecta.donar(500);
+		int donaciones = colecta.contarDonaciones();
+		
+		/* comprobación */
+		Assert.assertEquals("donaciones", 5, donaciones);
+	}
+} 
