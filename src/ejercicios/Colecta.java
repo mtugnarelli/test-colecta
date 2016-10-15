@@ -3,6 +3,7 @@ package ejercicios;
 public class Colecta {
 
 	private double objetivo;
+	private double recaudacion;
 
 	/**
 	 * pre : 'montoObjetivo' debe ser un valor positivo, en [$].
@@ -30,10 +31,11 @@ public class Colecta {
 
 	public void donar(double donacion) {
 		
+		this.recaudacion = donacion;
 	}
 
 	public double calcularRecaudacion() {
 
-		return 0;
+		return this.recaudacion;
 	}
 }
