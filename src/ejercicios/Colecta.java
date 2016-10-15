@@ -29,6 +29,11 @@ public class Colecta {
 		return this.objetivo;
 	}
 
+	/**
+	 * pre : 'donacion' es un valor positivo que repesenta un monto en [$].
+	 * post: realiza una donación en la Colecta, agregando 'donacion' [$] 
+	 * 		 a la recuadación.
+	 */
 	public void donar(double donacion) {
 		
 		if (donacion < 0) {
@@ -40,6 +45,9 @@ public class Colecta {
 		this.recaudacion = this.recaudacion + donacion;
 	}
 
+	/**
+	 * post: devuelve el total de [$] recaudado en la Colecta.
+	 */
 	public double calcularRecaudacion() {
 
 		return this.recaudacion;
