@@ -38,4 +38,19 @@ public class PruebaColecta {
 							5000.0, colecta.calcularRecaudacion(), 0.01);
 	}
 	
+	@Test
+	public void realizarDosDonacionesDe5000y600Pesos() {
+		
+		/* inicialización */
+		Colecta colecta = new Colecta(100000.0);
+		
+		/* operación */
+		colecta.donar(5000.0);
+		colecta.donar(600.0);
+		
+		/* comprobación */
+		Assert.assertEquals("Monto recaudado", 
+							5600.0, colecta.calcularRecaudacion(), 0.01);
+	}
+	
 }
