@@ -12,15 +12,24 @@ public class Colecta {
 	 */
 	public Colecta(double montoObjetivo) {
 
-		if (montoObjetivo < 0) {
-			
-			Error montoNegativo = new Error("El monto no puede ser negativo");
-			throw montoNegativo;
-		}
+		this.validar(montoObjetivo);
 		
 		this.objetivo = montoObjetivo;
 	}
 
+	/**
+	 * post: genera un error si 'monto' es un valor invalido, es decir
+	 * 		 que no corresponde con un monto en [$] porque es menor a 0.
+	 */
+	private void validar(double monto) {
+		
+		if (monto < 0) {
+			
+			Error montoNegativo = new Error("El monto no puede ser negativo");
+			throw montoNegativo;
+		}		
+	}
+	
 	/**
 	 * post: devuelve el monto que representa el objetivo a recaudar.
 	 */
@@ -36,11 +45,7 @@ public class Colecta {
 	 */
 	public void donar(double donacion) {
 		
-		if (donacion < 0) {
-			
-			Error montoNegativo = new Error("El monto no puede ser negativo");
-			throw montoNegativo;
-		}
+		this.validar(donacion);
 		
 		this.recaudacion = this.recaudacion + donacion;
 	}
