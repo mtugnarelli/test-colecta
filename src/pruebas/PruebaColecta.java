@@ -53,4 +53,13 @@ public class PruebaColecta {
 							5600.0, colecta.calcularRecaudacion(), 0.01);
 	}
 	
+	@Test(expected = Error.class)
+	public void realizarDonacionConUnMontoNegativoGeneraError() {
+
+		/* inicialización */
+		Colecta colecta = new Colecta(30000.0);
+		
+		/* operación */
+		colecta.donar(-100.0);
+	}
 }
