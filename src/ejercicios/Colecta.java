@@ -31,6 +31,12 @@ public class Colecta {
 
 	public void donar(double donacion) {
 		
+		if (donacion < 0) {
+			
+			Error montoNegativo = new Error("El monto no puede ser negativo");
+			throw montoNegativo;
+		}
+		
 		this.recaudacion = this.recaudacion + donacion;
 	}
 
