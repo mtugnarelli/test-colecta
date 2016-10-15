@@ -31,7 +31,7 @@ public class Colecta {
 
 	public void donar(double donacion) {
 		
-		this.recaudacion = donacion;
+		this.recaudacion = this.recaudacion + donacion;
 	}
 
 	public double calcularRecaudacion() {
