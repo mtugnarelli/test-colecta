@@ -1,26 +1,26 @@
-UNTreF - Algoritmos y Programaci贸n 1
+UNTreF - Algoritmos y Programaci脙鲁n 1
 
-# Pr醕tica de Pruebas Unitarias - Colecta
+# Pr谩ctica de Pruebas Unitarias - Colecta
 
 ## Enunciado
 
 Implementar la clase Colecta. 
 Debe proveer operaciones para:
 
-	* crear la Colecta recibiendo como par醡etro el monto [$] 
-	considerado como objetivo de la misma.
+* crear la Colecta recibiendo como par谩metro el monto [$] 
+ considerado como objetivo de la misma.
 	
-	* calcularRecaudaci髇: devuelve el monto total [$] recaudado. 
+* calcularRecaudaci贸n: devuelve el monto total [$] recaudado. 
 	
-	* donar: recibe el monto [$] a donar y lo agrega a la recaudaci髇.
+* donar: recibe el monto [$] a donar y lo agrega a la recaudaci贸n.
 	
-	* contarDonaciones: devuelve la cantidad de donaciones recibidas.
+* contarDonaciones: devuelve la cantidad de donaciones recibidas.
 	
-	* calcularDonacionMaxima: devuelve el monto [$] de la m醲ima donaci髇 
-	recibida.
+* calcularDonacionMaxima: devuelve el monto [$] de la m谩xima donaci贸n 
+ recibida.
 	
-	* calcularRecaudacionFaltante: devuelve el monto [$] que falta 
-	recaudar para cumplir con el objetivode la Colecta, o cero [$] 
-	en caso de haberse superado.
+* calcularRecaudacionFaltante: devuelve el monto [$] que falta 
+ recaudar para cumplir con el objetivode la Colecta, o cero [$] 
+ en caso de haberse superado.
 
 	
