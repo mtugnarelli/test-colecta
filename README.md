@@ -1,4 +1,4 @@
-UNTreF - Algoritmos y ProgramaciÃ³n 1
+UNTreF - Algoritmos y Programación 1
 
 # Práctica de Pruebas Unitarias - Colecta
 
